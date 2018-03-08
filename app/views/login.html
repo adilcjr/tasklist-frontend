@@ -1,0 +1,38 @@
+<div class="login-page">
+	<div class="img-container">
+		<div class="text-center pull-right photo">
+			<img src="images/flat-avatar.png" class="user-avatar img-circle img-responsive" />
+				<h1>Task List<br/ ><small>by Adil Calomeno Junior</small></h1>
+			</div>
+		</div>
+		
+		<div class="form-content" ng-controller="LoginCtrl">			
+			<form role="form" class="bottom-75"  ng-submit="submit(login)">
+			<div class="table-form">
+				<div class="form-groups">
+					<div class="form-group">
+						<input type="text" class="form-control input-lg" ng-model="login.email" placeholder="EMAIL">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control input-lg" ng-model="login.password" placeholder="SENHA">
+					</div>
+				</div>	
+				<div class="button-container">
+					<button type="submit" class="btn btn-default login"><img src="images/arrow.png" alt=""></button>
+				</div>
+			</div>
+			<div class="remember">
+				<label class="checkbox1" for="Option"> 
+					<input id="Option" type="checkbox" class="">
+					<span></span>
+				</label>
+				Lembrar
+				<span class="pass"> Esqueceu sua senha?</span>
+			</div>
+			<div class="message">
+				<span class="danger"><b>{{message}}</b></span>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
